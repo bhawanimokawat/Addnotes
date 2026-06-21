@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-import MainLayout from "../components/layout/MainLayout";
+ 
+import MainLayout from "../components/layout/Mainlayout";
+
 
 import FolderSection from "../components/floders/FolderSection";
 
