@@ -20,8 +20,6 @@ function Dashboard() {
 
     <MainLayout
 
-       
-
       search={search}
 
       setSearch={setSearch}
