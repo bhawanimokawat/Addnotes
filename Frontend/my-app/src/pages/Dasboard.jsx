@@ -20,9 +20,7 @@ function Dashboard() {
 
     <MainLayout
 
-      menu={menu}
-
-      setMenu={setMenu}
+       
 
       search={search}
 
