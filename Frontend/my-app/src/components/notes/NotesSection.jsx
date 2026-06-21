@@ -1,6 +1,5 @@
 import NoteCard from "./NoteCard";
 import { useState, useEffect } from "react";
-//import { notes } from "../../data/notes";
 import AddNoteCard from "./AddNoteCard";
 import SectionHeader from "../common/SectionHeader";
 import API from "../../services/api";
