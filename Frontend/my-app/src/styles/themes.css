@@ -1,0 +1,72 @@
+:root {
+
+  --bg: #F8FAFC;
+
+  --sidebar: #FFFFFF;
+
+  --header: #FFFFFF;
+
+  --card: #FFFFFF;
+
+  --rightpanel: #FFFFFF;
+
+  --text: #1E293B;
+
+  --accent: #4F46E5;
+
+  --border: #E2E8F0;
+}
+
+
+/* DARK */
+
+body[data-theme="dark"] {
+
+  --bg: #0F172A;
+
+  --sidebar: #1E293B;
+
+  --header: #1E293B;
+
+  --card: #334155;
+
+  --rightpanel: #1E293B;
+
+  --text: #FFFFFF;
+
+  --accent: #8B5CF6;
+
+  --border: #475569;
+}
+
+
+/* OCEAN */
+
+body[data-theme="ocean"] {
+
+  --bg: #EFF6FF;
+
+  --sidebar: #FFFFFF;
+
+  --header: #FFFFFF;
+
+  --card: #FFFFFF;
+
+  --rightpanel: #FFFFFF;
+
+  --text: #0F172A;
+
+  --accent: #06B6D4;
+
+  --border: #BFDBFE;
+}
+
+
+body {
+
+  background: var(--bg);
+
+  color: var(--text);
+
+  transition: 0.3s ease;
+}
