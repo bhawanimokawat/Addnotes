@@ -1,20 +1,3 @@
-//import React from 'react'
-//import Dashboard from './pages/Dasboard'
-// const App = () => {
-  // return (
-    // <div>
-
-    // <Dashboard />
-
-
-    // </div>
-  // )
- //}
- 
- //export default App
-
-
-// we are recreating if any bug hit then we fix it later 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
