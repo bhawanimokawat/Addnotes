@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import FolderCard from "./FolderCard.jsx";
 import AddFolderCard from "./AddFolderCard";
-//import { folders } from "../../data/folders";
 import SectionHeader from "../common/SectionHeader";
 import API from "../../services/api";
 
