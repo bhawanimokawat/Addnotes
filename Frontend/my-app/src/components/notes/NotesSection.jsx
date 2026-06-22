@@ -1,4 +1,4 @@
-import NoteCard from "./NoteCard";
+import Notecard from "./Notecard";
 import { useState, useEffect } from "react";
 import AddNoteCard from "./AddNoteCard";
 import SectionHeader from "../common/SectionHeader";
@@ -332,7 +332,7 @@ const filteredNotes = allNotes.filter((note) => {
               key={note._id}
             >
 
-              <NoteCard
+              <Notecard
 
                 note={note}
 

@@ -1,4 +1,4 @@
-function NoteCard({
+function Notecard({
 
   note,
 
@@ -73,4 +73,4 @@ function NoteCard({
 
 }
 
-export default NoteCard;
+export default Notecard;
