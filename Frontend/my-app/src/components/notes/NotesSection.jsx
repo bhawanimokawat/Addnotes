@@ -14,8 +14,6 @@ function NotesSection({ selectedFolder, search,activeTab, }) {
     try {
       const res = await API.get("/notes");
 
-      console.log("API NOTES:", res.data);
-
       setAllNotes(res.data);
      
 
