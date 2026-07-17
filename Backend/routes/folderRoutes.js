@@ -1,44 +1,15 @@
 import express from "express";
-
-import {
-
-    createFolder,
-
-    getFolders,
-
-    updateFolder,
-
-    deleteFolder,
-
-} from "../controllers/folderController.js";
-
+import { createFolder, getFolders, updateFolder, deleteFolder,} from "../controllers/folderController.js";
 import protect from "../middleware/authMiddleware.js";
 
-const router =
-    express.Router();
+const router = express.Router();
 
-router.get(
-    "/",
-    protect,
-    getFolders
-);
+router.get( "/", protect, getFolders);
 
-router.post(
-    "/",
-    protect,
-    createFolder
-);
+router.post("/",protect,createFolder);
 
-router.patch(
-    "/:id",
-    protect,
-    updateFolder
-);
+router.patch("/:id",protect,updateFolder);
 
-router.delete(
-    "/:id",
-    protect,
-    deleteFolder
-);
+router.delete("/:id",protect,deleteFolder);
 
 export default router;

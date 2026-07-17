@@ -1,14 +1,6 @@
-
-
 import protect from "../middleware/authMiddleware.js";
 import express from "express";
-import {
-  createNote,
-  getNotes,
-  getNoteById,
-  updateNote,
-  deleteNote,
-} from "../controllers/noteController.js";
+import {createNote,getNotes, getNoteById, updateNote, deleteNote,} from "../controllers/noteController.js";
 
 const router = express.Router();
 

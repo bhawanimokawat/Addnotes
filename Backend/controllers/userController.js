@@ -18,12 +18,7 @@ export const registerUser = async (req, res) => {
 
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        const user = await User.create({
-            name,
-            email,
-            password: hashedPassword,
-        });
-
+        const user = await User.create({ name, email, password: hashedPassword, });
         res.status(201).json({
             message: "User created",
             user,
@@ -44,6 +39,9 @@ export const loginUser = async (req, res) => {
 
         const user = await User.findOne({ email });
 
+        console.log("Email entered:", email);
+        console.log("User found:", user);
+
         if (!user) {
             return res.status(400).json({
                 message: "Invalid credentials",
@@ -54,6 +52,10 @@ export const loginUser = async (req, res) => {
             password,
             user.password
         );
+
+        console.log("Password entered:", password);
+        console.log("Stored hash:", user.password);
+        console.log("Match:", isMatch);
 
         if (!isMatch) {
             return res.status(400).json({

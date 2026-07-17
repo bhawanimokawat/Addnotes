@@ -37,9 +37,9 @@ export default function Login() {
       navigate("/dashboard");
 
     } catch (error) {
-
-      alert("Login failed");
-
+      console.log("Status:", error.response?.status);
+      console.log("Response:", error.response?.data);
+      alert(error.response?.data?.message || "Login failed");
     }
   };
 

@@ -1,16 +1,11 @@
 import Folder from "../models/folder.js";
 
 // CREATE
-
-export const createFolder = async (
-  req,
-  res
-) => {
+export const createFolder = async (req,res) => {
 
   try {
 
-    const folder =
-      await Folder.create({
+    const folder = await Folder.create({
 
         name: req.body.name,
 
